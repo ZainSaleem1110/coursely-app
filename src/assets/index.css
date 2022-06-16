@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.girlImg{
+    background: url('./images/girlImg.svg') no-repeat center/cover;
+}
+.girlImgMob{
+    background: url('./images/girlImgMob.svg') no-repeat center/cover;
+}
+.rotateImgMob{
+    background: url('./images/rotateImg.png') no-repeat center/cover;
+}
+.rotateImg{
+    transform: rotate(0deg);
+    width: 110%;
+}
+@media screen and (max-width: 400px) {
+    .rotateImg{
+        transform: rotate(350deg) !important;
+        width: 130%;
+    }
+  }
